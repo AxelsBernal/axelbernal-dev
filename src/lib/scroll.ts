@@ -10,7 +10,8 @@ export function setLenis(l: Lenis | null) {
 export function scrollToId(id: string) {
   const el = document.getElementById(id);
   if (!el) return;
-  if (lenis) lenis.scrollTo(el, { offset: -88, duration: 1.4 });
+  /* Lenis ya respeta el scroll-margin-top de la sección; sin offset extra. */
+  if (lenis) lenis.scrollTo(el, { duration: 1.4 });
   else el.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
