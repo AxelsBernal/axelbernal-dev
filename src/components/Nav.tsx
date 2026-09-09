@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import { FileDown, Languages, Menu, X } from "lucide-react";
@@ -28,7 +28,10 @@ export function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const go = (id: string) => {
+  /* Enlaces reales (#id) para que los rastreadores los sigan; el clic lo
+     toma Lenis para el desplazamiento suave. */
+  const go = (e: MouseEvent, id: string) => {
+    e.preventDefault();
     setOpen(false);
     scrollToId(id);
   };
@@ -52,9 +55,9 @@ export function Nav() {
         <ul className="hidden items-center gap-0.5 md:flex lg:gap-1">
           {ITEMS.map(([id, key]) => (
             <li key={id}>
-              <button onClick={() => go(id)} className="whitespace-nowrap rounded-full px-2.5 py-1.5 text-[13.5px] font-medium text-fog-2 transition hover:bg-white/10 hover:text-fog lg:px-3.5 lg:text-[14px]">
+              <a href={`#${id}`} onClick={(e) => go(e, id)} className="inline-block whitespace-nowrap rounded-full px-2.5 py-1.5 text-[13.5px] font-medium text-fog-2 transition hover:bg-white/10 hover:text-fog lg:px-3.5 lg:text-[14px]">
                 {t(key)}
-              </button>
+              </a>
             </li>
           ))}
         </ul>
@@ -92,9 +95,9 @@ export function Nav() {
               <ul className="flex flex-col">
                 {ITEMS.map(([id, key]) => (
                   <li key={id}>
-                    <button onClick={() => go(id)} className="w-full rounded-xl px-4 py-3 text-left text-[15px] font-medium text-fog-2 hover:bg-white/10 hover:text-fog">
+                    <a href={`#${id}`} onClick={(e) => go(e, id)} className="block w-full rounded-xl px-4 py-3 text-left text-[15px] font-medium text-fog-2 hover:bg-white/10 hover:text-fog">
                       {t(key)}
-                    </button>
+                    </a>
                   </li>
                 ))}
               </ul>

@@ -1,11 +1,14 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Lenis from "lenis";
 import { SiteProvider, useSite } from "@/hooks/useSite";
 import { view } from "@/state/view";
 import { setLenis } from "@/lib/scroll";
-import { Scene } from "@/three/Scene";
+
+/* Three.js pesa más que todo lo demás junto: se carga aparte para que el
+   HTML, las fuentes y el texto pinten primero (y el rastreador los lea). */
+const Scene = lazy(() => import("@/three/Scene").then((m) => ({ default: m.Scene })));
 import { LiquidFilter } from "@/components/LiquidFilter";
 import { Intro } from "@/components/Intro";
 import { Nav } from "@/components/Nav";
@@ -74,7 +77,9 @@ function Shell() {
   return (
     <>
       <LiquidFilter />
-      <Scene />
+      <Suspense fallback={null}>
+        <Scene />
+      </Suspense>
       <AnimatePresence>{phase === "intro" && <Intro key="intro" />}</AnimatePresence>
       {phase === "site" && (
         <motion.div className="site" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.1, ease: "easeOut" }}>

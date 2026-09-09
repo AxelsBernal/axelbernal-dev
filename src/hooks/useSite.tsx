@@ -40,8 +40,14 @@ export function SiteProvider({ children }: { children: ReactNode }) {
     () => window.matchMedia("(max-width: 820px)").matches || (navigator.hardwareConcurrency ?? 8) <= 4,
     [],
   );
+  /* Los rastreadores (Google, Bing, LinkedIn, WhatsApp…) no pulsan «Entrar»:
+     a ellos se les enseña el sitio directo, o indexarían una página vacía. */
+  const crawler = useMemo(
+    () => /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|linkedinbot|twitterbot|whatsapp|telegram|lighthouse|pagespeed|headless/i.test(navigator.userAgent),
+    [],
+  );
   const [phase, setPhase] = useState<Phase>(() =>
-    reduced || safeSession.get("ab_intro") === "1" ? "site" : "intro",
+    reduced || crawler || safeSession.get("ab_intro") === "1" ? "site" : "intro",
   );
 
   const enter = useCallback(() => {
