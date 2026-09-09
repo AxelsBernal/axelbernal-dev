@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
-import { Languages, Menu, X } from "lucide-react";
+import { FileDown, Languages, Menu, X } from "lucide-react";
 import { Glass } from "./Glass";
 import { scrollToId, cx } from "@/lib/scroll";
 import { currentLang } from "@/i18n";
@@ -60,6 +60,15 @@ export function Nav() {
         </ul>
 
         <div className="flex items-center gap-1">
+          <a
+            href={`/cv/Axel-Bernal-CV-${lang}.pdf`}
+            download
+            className="pill hidden !px-3 !py-1.5 text-[13px] sm:inline-flex"
+            title={t("nav.cv_title")}
+          >
+            <FileDown size={15} aria-hidden />
+            {t("nav.cv")}
+          </a>
           <button onClick={toggleLang} className="pill !px-3 !py-1.5 text-[13px]" aria-label={t("nav.lang")} title={t("nav.lang")}>
             <Languages size={15} aria-hidden />
             <span className="font-mono">{lang === "es" ? "EN" : "ES"}</span>

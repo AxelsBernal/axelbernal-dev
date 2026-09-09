@@ -118,7 +118,7 @@ export const earlyProjects: Project[] = [
 
 export const steps: Step[] = [
   {
-    from: "Ene 2026",
+    from: "Mar 2026",
     title: { es: "Gerente de Desarrollo Web e IA", en: "Web & AI Development Manager" },
     org: "Satium Technologies",
     note: {
@@ -128,10 +128,23 @@ export const steps: Step[] = [
     current: true,
   },
   {
+    from: "Sep 2026",
+    to: "Dic 2026",
+    title: { es: "Máster en Inteligencia Artificial", en: "Master's in Artificial Intelligence" },
+    org: "BIG school",
+    note: {
+      es: "Agentes y modelos de lenguaje, Claude Code y Codex, automatización con n8n y Make. En curso.",
+      en: "Agents and language models, Claude Code and Codex, automation with n8n and Make. In progress.",
+    },
+  },
+  {
     from: "Ago 2026",
-    title: { es: "Ingeniero en Sistemas Computacionales", en: "B.Eng. in Computer Systems" },
+    title: { es: "Ingeniero en Sistemas Computacionales", en: "B.Eng. in Computer Systems Engineering" },
     org: "Instituto Tecnológico de Tepic",
-    note: { es: "Titulación.", en: "Degree awarded." },
+    note: {
+      es: "Especialidad en Desarrollo Web. Estudios de 2020 a 2025; titulación en agosto de 2026.",
+      en: "Web Development specialization. Studies from 2020 to 2025; degree awarded in August 2026.",
+    },
   },
   {
     from: "Mar 2025",

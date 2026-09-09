@@ -15,19 +15,21 @@
     "about": "About",
     "path": "Path",
     "contact": "Contact",
+    "cv": "Resume",
+    "cv_title": "Download resume as PDF",
     "lang": "Switch to Spanish",
     "menu": "Menu"
   },
   "hero": {
     "role": "Web & AI Development Manager · Satium Technologies",
-    "thesis": "I build and lead tax-compliance software for companies in Mexico, Chile and Peru: a SaaS platform with more than a dozen applications in production, developed with AI agents as part of the team.",
+    "thesis": "I build and lead business software that runs in production: a tax-compliance SaaS platform for Mexico, Chile and Peru with fourteen applications, and products of my own such as Eventleta. I work with AI agents as part of the team.",
     "cta_work": "See the case studies",
     "cta_contact": "Let's talk",
     "facts": "3 countries · 14 applications in production · migrations reconciled to the cent"
   },
   "about": {
     "title": "Who I am",
-    "p1": "I am a computer systems engineer from the Instituto Tecnológico de Tepic and I lead web and AI development at Satium Technologies. I joined in 2025 as a Java intern on the system we are now replacing; in January 2026 I took over as manager and since then I have built most of SATIUM: the API, the applications, the migration of client data and the production operation.",
+    "p1": "I am a computer systems engineer from the Instituto Tecnológico de Tepic and I lead web and AI development at Satium Technologies. I joined in 2025 as an intern on the system we are now replacing; in March 2026 I took over as manager and since then I have built most of SATIUM: the API, the applications, the migration of client data and the production operation.",
     "p2": "The part I enjoy most is the hard stretch: taking a fifteen-year-old system, understanding why it does what it does, and rebuilding it without a single peso left unexplained. I work with AI agents as part of the team, with a method that makes them trustworthy.",
     "method_title": "How I work",
     "method": [
@@ -79,6 +81,8 @@
     "title": "Let's talk",
     "lead": "Job offers, projects, consulting, or a conversation about building software with AI. I answer by email and WhatsApp.",
     "email": "Email",
+    "cv": "Download resume (PDF)",
+    "cv_docx": "Word version",
     "form": {
       "name": "Your name",
       "email": "Your email",

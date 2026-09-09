@@ -15,19 +15,21 @@
     "about": "Sobre mí",
     "path": "Trayectoria",
     "contact": "Contacto",
+    "cv": "CV",
+    "cv_title": "Descargar CV en PDF",
     "lang": "Cambiar a inglés",
     "menu": "Menú"
   },
   "hero": {
     "role": "Gerente de Desarrollo Web e IA · Satium Technologies",
-    "thesis": "Construyo y dirijo software de cumplimiento fiscal para empresas de México, Chile y Perú: una plataforma SaaS con más de una docena de aplicaciones en producción, desarrollada con agentes de IA como parte del equipo.",
+    "thesis": "Construyo y dirijo software de negocio que opera en producción: una plataforma SaaS de cumplimiento fiscal para México, Chile y Perú con catorce aplicaciones, y productos propios como Eventleta. Trabajo con agentes de IA como parte del equipo.",
     "cta_work": "Ver los casos",
     "cta_contact": "Hablemos",
     "facts": "3 países · 14 aplicaciones en producción · migraciones cuadradas al centavo"
   },
   "about": {
     "title": "Quién soy",
-    "p1": "Soy ingeniero en sistemas computacionales por el Instituto Tecnológico de Tepic y dirijo el desarrollo web y de IA en Satium Technologies. Entré en 2025 como practicante de Java al sistema que hoy sustituimos; en enero de 2026 tomé la gerencia y desde entonces he construido la mayor parte de SATIUM: la API, las aplicaciones, la migración de los datos de los clientes y la operación en producción.",
+    "p1": "Soy ingeniero en sistemas computacionales por el Instituto Tecnológico de Tepic y dirijo el desarrollo web y de IA en Satium Technologies. Entré en 2025 como practicante al sistema que hoy sustituimos; en marzo de 2026 tomé la gerencia y desde entonces he construido la mayor parte de SATIUM: la API, las aplicaciones, la migración de los datos de los clientes y la operación en producción.",
     "p2": "Lo que más me gusta es el tramo difícil: tomar un sistema de quince años, entender por qué hace lo que hace y reconstruirlo sin que un solo peso quede sin explicar. Trabajo con agentes de IA como parte del equipo, con un método que los hace confiables.",
     "method_title": "Cómo trabajo",
     "method": [
@@ -79,6 +81,8 @@
     "title": "Hablemos",
     "lead": "Ofertas de trabajo, proyectos, consultoría o una conversación sobre cómo construir software con IA. Respondo por correo y por WhatsApp.",
     "email": "Correo",
+    "cv": "Descargar CV (PDF)",
+    "cv_docx": "Versión en Word",
     "form": {
       "name": "Tu nombre",
       "email": "Tu correo",

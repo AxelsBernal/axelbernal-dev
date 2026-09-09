@@ -1,7 +1,8 @@
 import { useRef, useState, type FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import emailjsClient from "@emailjs/browser";
-import { Mail, Send } from "lucide-react";
+import { FileDown, Mail, Send } from "lucide-react";
+import { currentLang } from "@/i18n";
 import { Glass } from "@/components/Glass";
 import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/Section";
@@ -14,6 +15,7 @@ export function Contact() {
   const { t } = useTranslation();
   const form = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<Status>("idle");
+  const lang = currentLang();
 
   const send = async (e: FormEvent) => {
     e.preventDefault();
@@ -36,6 +38,14 @@ export function Contact() {
       <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:gap-12">
         <Reveal>
           <div className="flex flex-col gap-3">
+            <div className="flex gap-2">
+              <a href={`/cv/Axel-Bernal-CV-${lang}.pdf`} download className="pill pill-primary flex-1 !py-3.5">
+                <FileDown size={18} aria-hidden /> {t("contact.cv")}
+              </a>
+              <a href={`/cv/Axel-Bernal-CV-${lang}.docx`} download className="pill !py-3.5 font-mono text-[12px]" title={t("contact.cv_docx")}>
+                DOCX
+              </a>
+            </div>
             <a href={`mailto:${links.email}`} className="pill justify-between !py-3.5">
               <span className="flex items-center gap-3">
                 <Mail size={18} aria-hidden /> {links.email}
