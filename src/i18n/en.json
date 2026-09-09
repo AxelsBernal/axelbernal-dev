@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Axel Bernal · Web & AI development"
+  },
+  "intro": {
+    "name": "Axel Bernal",
+    "tag": "Web & AI development · 2026",
+    "enter": "Enter",
+    "hint": "Enter, click or scroll"
+  },
+  "nav": {
+    "work": "Case studies",
+    "platform": "Platform",
+    "projects": "Projects",
+    "about": "About",
+    "path": "Path",
+    "contact": "Contact",
+    "lang": "Switch to Spanish",
+    "menu": "Menu"
+  },
+  "hero": {
+    "role": "Web & AI Development Manager · Satium Technologies",
+    "thesis": "I build and lead tax-compliance software for companies in Mexico, Chile and Peru: a SaaS platform with more than a dozen applications in production, developed with AI agents as part of the team.",
+    "cta_work": "See the case studies",
+    "cta_contact": "Let's talk",
+    "facts": "3 countries · 14 applications in production · migrations reconciled to the cent"
+  },
+  "about": {
+    "title": "Who I am",
+    "p1": "I am a computer systems engineer from the Instituto Tecnológico de Tepic and I lead web and AI development at Satium Technologies. I joined in 2025 as a Java intern on the system we are now replacing; in January 2026 I took over as manager and since then I have built most of SATIUM: the API, the applications, the migration of client data and the production operation.",
+    "p2": "The part I enjoy most is the hard stretch: taking a fifteen-year-old system, understanding why it does what it does, and rebuilding it without a single peso left unexplained. I work with AI agents as part of the team, with a method that makes them trustworthy.",
+    "method_title": "How I work",
+    "method": [
+      {
+        "t": "Reconcile against the source",
+        "d": "A migration is done when every money screen matches the previous system, or the difference is explained to the cent."
+      },
+      {
+        "t": "Specify before building",
+        "d": "Every application starts with a spec and a plan; the old system is the source of the rules, with file and line."
+      },
+      {
+        "t": "AI as a team, not a shortcut",
+        "d": "I direct AI agents with specifications, tests and verification in the browser. Speed comes from there; trust comes from the method."
+      },
+      {
+        "t": "Operate what I build",
+        "d": "Deployment, alerting, backups, incidents and living documentation per module, so the next person can pick it up."
+      }
+    ]
+  },
+  "cases": {
+    "title": "Case studies",
+    "lead": "Eight fronts of a single product: SATIUM, the platform with which Satium Technologies replaces SIAREX, a Java system with fifteen years in production. Each case says what there was, what I decided and what came out.",
+    "context": "Context",
+    "did": "What I did",
+    "result": "Result"
+  },
+  "platform": {
+    "title": "The platform",
+    "lead": "SATIUM is multi-company and multi-application: each client turns on the applications it uses. These are the ones I have built or migrated.",
+    "stack_title": "What it is made of"
+  },
+  "projects": {
+    "title": "Projects",
+    "lead": "What exists outside SATIUM: a product of my own in production and the first jobs where I learned to deliver.",
+    "own": "Own product",
+    "early": "Early work",
+    "visit": "Visit",
+    "live": "In production"
+  },
+  "path": {
+    "title": "Path",
+    "now": "Current",
+    "sport_title": "Frontenis",
+    "sport": "I am a United States national team player in frontenis. High-performance sport taught me what I use every day: discipline, consistency and calm when the score gets tight."
+  },
+  "contact": {
+    "title": "Let's talk",
+    "lead": "Job offers, projects, consulting, or a conversation about building software with AI. I answer by email and WhatsApp.",
+    "email": "Email",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "send": "Send message",
+      "sending": "Sending…",
+      "ok": "Message sent. I will get back to you soon.",
+      "error": "It could not be sent. Write to me directly by email."
+    }
+  },
+  "footer": {
+    "built": "Built with React, Three.js and liquid glass.",
+    "rights": "Axel Sandoval Bernal · Tepic, Nayarit, Mexico"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Axel Bernal · Desarrollo web e IA"
+  },
+  "intro": {
+    "name": "Axel Bernal",
+    "tag": "Desarrollo web e IA · 2026",
+    "enter": "Entrar",
+    "hint": "Enter, clic o scroll"
+  },
+  "nav": {
+    "work": "Casos",
+    "platform": "Plataforma",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "path": "Trayectoria",
+    "contact": "Contacto",
+    "lang": "Cambiar a inglés",
+    "menu": "Menú"
+  },
+  "hero": {
+    "role": "Gerente de Desarrollo Web e IA · Satium Technologies",
+    "thesis": "Construyo y dirijo software de cumplimiento fiscal para empresas de México, Chile y Perú: una plataforma SaaS con más de una docena de aplicaciones en producción, desarrollada con agentes de IA como parte del equipo.",
+    "cta_work": "Ver los casos",
+    "cta_contact": "Hablemos",
+    "facts": "3 países · 14 aplicaciones en producción · migraciones cuadradas al centavo"
+  },
+  "about": {
+    "title": "Quién soy",
+    "p1": "Soy ingeniero en sistemas computacionales por el Instituto Tecnológico de Tepic y dirijo el desarrollo web y de IA en Satium Technologies. Entré en 2025 como practicante de Java al sistema que hoy sustituimos; en enero de 2026 tomé la gerencia y desde entonces he construido la mayor parte de SATIUM: la API, las aplicaciones, la migración de los datos de los clientes y la operación en producción.",
+    "p2": "Lo que más me gusta es el tramo difícil: tomar un sistema de quince años, entender por qué hace lo que hace y reconstruirlo sin que un solo peso quede sin explicar. Trabajo con agentes de IA como parte del equipo, con un método que los hace confiables.",
+    "method_title": "Cómo trabajo",
+    "method": [
+      {
+        "t": "Cuadrar contra la fuente",
+        "d": "Una migración termina cuando cada pantalla del dinero coincide con el sistema anterior, o la diferencia está explicada al centavo."
+      },
+      {
+        "t": "Especificar antes de construir",
+        "d": "Cada aplicación arranca con una especificación y un plan; el sistema viejo es la fuente de las reglas, con archivo y línea."
+      },
+      {
+        "t": "IA como equipo, no como atajo",
+        "d": "Dirijo agentes de IA con especificaciones, pruebas y verificación en el navegador. La velocidad viene de ahí; la confianza, del método."
+      },
+      {
+        "t": "Operar lo que construyo",
+        "d": "Despliegue, alertas, respaldos, incidentes y documentación viva por módulo, para que el siguiente pueda retomar."
+      }
+    ]
+  },
+  "cases": {
+    "title": "Casos",
+    "lead": "Ocho frentes de un mismo producto: SATIUM, la plataforma con la que Satium Technologies sustituye a SIAREX, un sistema Java con quince años en producción. Cada caso dice qué había, qué decidí y qué salió.",
+    "context": "Contexto",
+    "did": "Qué hice",
+    "result": "Resultado"
+  },
+  "platform": {
+    "title": "La plataforma",
+    "lead": "SATIUM es multi-empresa y multi-aplicación: cada cliente enciende las aplicaciones que usa. Estas son las que he construido o migrado.",
+    "stack_title": "Con qué está hecha"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "lead": "Lo que existe fuera de SATIUM: un producto propio en producción y los primeros trabajos con los que aprendí a entregar.",
+    "own": "Producto propio",
+    "early": "Primeros trabajos",
+    "visit": "Visitar",
+    "live": "En producción"
+  },
+  "path": {
+    "title": "Trayectoria",
+    "now": "Actual",
+    "sport_title": "Frontenis",
+    "sport": "Soy seleccionado nacional de frontenis por Estados Unidos. El deporte de alto rendimiento me enseñó lo que uso a diario: disciplina, constancia y calma cuando el marcador aprieta."
+  },
+  "contact": {
+    "title": "Hablemos",
+    "lead": "Ofertas de trabajo, proyectos, consultoría o una conversación sobre cómo construir software con IA. Respondo por correo y por WhatsApp.",
+    "email": "Correo",
+    "form": {
+      "name": "Tu nombre",
+      "email": "Tu correo",
+      "message": "Tu mensaje",
+      "send": "Enviar mensaje",
+      "sending": "Enviando…",
+      "ok": "Mensaje enviado. Te respondo pronto.",
+      "error": "No se pudo enviar. Escríbeme directo al correo."
+    }
+  },
+  "footer": {
+    "built": "Hecho con React, Three.js y vidrio líquido.",
+    "rights": "Axel Sandoval Bernal · Tepic, Nayarit, México"
+  }
+}
