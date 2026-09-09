@@ -93,6 +93,17 @@ ES = CV(
             ],
         ),
         Job(
+            org="Eventleta · eventleta.com",
+            role="Fundador y desarrollador full-stack (producto propio)",
+            place="Tepic, Nayarit",
+            when="2026 – actualidad",
+            bullets=[
+                "Plataforma de inscripciones a carreras 5K, 10K y 21K: el organizador publica su carrera y cobra en línea; el corredor se inscribe sin crear cuenta y recibe su dorsal con código QR para recoger el kit. En producción con la carrera piloto II Festival Running (Tepic, noviembre de 2026).",
+                "Diseñé y construí el producto completo: portal público para teléfonos de gama baja, panel del organizador con inscritos e ingresos en vivo, administración con comisiones y conciliación; pagos con Mercado Pago (split con comisión automática) y transferencia con revisión.",
+                "React con TypeScript y Tailwind, FastAPI, PostgreSQL y Cloud Run; kit de marca e identidad propios.",
+            ],
+        ),
+        Job(
             org="SIAREX Technology",
             role="Desarrollador full-stack (prácticas)",
             place="Remoto",
@@ -108,18 +119,12 @@ ES = CV(
             place="Tepic, Nayarit",
             when="2023 – 2024",
             bullets=[
-                "Club del Valle: sistema de gestión de socios con React y Firebase, con correos automáticos por Mailjet.",
-                "Punto de venta integrado a Google Sheets para La Crudelia Grill; aplicación de escritorio en Java para un consultorio dental.",
+                "Gestión de socios para Club del Valle (React, Firebase, correos con Mailjet); punto de venta con Google Sheets para La Crudelia Grill; app de escritorio en Java para un consultorio dental.",
             ],
         ),
     ],
     projects_title="Proyectos",
-    projects=[
-        (
-            "Eventleta · eventleta.com · 2026",
-            "Plataforma de inscripciones a carreras 5K, 10K y 21K: pagos con Mercado Pago, dorsal con QR y panel del organizador. React, FastAPI, PostgreSQL, Cloud Run. En producción.",
-        ),
-    ],
+    projects=[],
     education_title="Educación",
     education=[
         (
@@ -140,12 +145,11 @@ ES = CV(
     ),
     skills_title="Habilidades",
     skills=[
-        ("Backend", "Python, FastAPI, SQLAlchemy, PostgreSQL, Supabase, Pydantic, WeasyPrint, openpyxl"),
+        ("Backend", "Python, FastAPI, SQLAlchemy, PostgreSQL, Supabase, Pydantic, WeasyPrint; Java, JavaEE / Struts, MySQL"),
         ("Frontend", "TypeScript, React, Vite, Tailwind, shadcn/ui, Three.js, PWA"),
         ("Nube y operación", "Google Cloud Run y Cloud Run Jobs, Cloud Storage, Firebase, Docker, BigQuery, alertas a Slack"),
-        ("Fiscal", "CFDI 4.0, SAT, PAC, SII (Chile), SUNAT (Perú), IMSS / IDSE"),
+        ("Fiscal", "CFDI 4.0, SAT, PAC, SII (Chile), SUNAT (Perú), IMSS / IDSE, Mercado Pago"),
         ("IA", "Claude Code, Codex, OpenAI API, tool calling, Playwright"),
-        ("Legado", "Java, JavaEE / Struts, MySQL, Tomcat"),
     ],
     languages="Español e inglés",
     interests_title="Intereses",
@@ -168,8 +172,8 @@ EN = CV(
     summary=(
         "Computer systems engineer and full-stack technical lead. I lead the development of SATIUM, a tax-compliance "
         "SaaS ERP for Mexico, Chile and Peru with fourteen applications in production (FastAPI, React, PostgreSQL, "
-        "Google Cloud). I have migrated legacy systems reconciling the data to the cent, and I run the platform with "
-        "AI agents as part of the team. Looking for a senior full-stack or technical-lead role, remote or on-site, in Mexico or the United States; open to relocation."
+        "Google Cloud). I migrate legacy systems reconciling the data to the cent and run the platform with AI agents "
+        "on the team. Seeking a senior full-stack or technical-lead role, remote or on-site, in Mexico or the United States; open to relocation."
     ),
     experience_title="Experience",
     jobs=[
@@ -188,6 +192,17 @@ EN = CV(
             ],
         ),
         Job(
+            org="Eventleta · eventleta.com",
+            role="Founder and full-stack developer (own product)",
+            place="Tepic, Nayarit",
+            when="2026 – present",
+            bullets=[
+                "Registration platform for 5K, 10K and 21K races: organizers publish their race and collect payments online; runners sign up without an account and receive a QR bib to pick up their kit. In production with the pilot race II Festival Running (Tepic, November 2026).",
+                "Designed and built the whole product: public portal for low-end phones, organizer dashboard with live registrations and revenue, admin with commissions and reconciliation; Mercado Pago split payments and bank transfer with review.",
+                "React with TypeScript and Tailwind, FastAPI, PostgreSQL and Cloud Run; own brand kit and identity.",
+            ],
+        ),
+        Job(
             org="SIAREX Technology",
             role="Full-stack Developer (internship)",
             place="Remote",
@@ -203,18 +218,12 @@ EN = CV(
             place="Tepic, Nayarit",
             when="2023 – 2024",
             bullets=[
-                "Club del Valle: member management system with React and Firebase, automated emails through Mailjet.",
-                "Point of sale integrated with Google Sheets for La Crudelia Grill; Java desktop application for a dental office.",
+                "Member management for Club del Valle (React, Firebase, Mailjet emails); Google Sheets point of sale for La Crudelia Grill; Java desktop app for a dental office.",
             ],
         ),
     ],
     projects_title="Projects",
-    projects=[
-        (
-            "Eventleta · eventleta.com · 2026",
-            "Registration platform for 5K, 10K and 21K races: Mercado Pago payments, QR bib and organizer dashboard. React, FastAPI, PostgreSQL, Cloud Run. In production.",
-        ),
-    ],
+    projects=[],
     education_title="Education",
     education=[
         (
@@ -235,12 +244,11 @@ EN = CV(
     ),
     skills_title="Skills",
     skills=[
-        ("Backend", "Python, FastAPI, SQLAlchemy, PostgreSQL, Supabase, Pydantic, WeasyPrint, openpyxl"),
+        ("Backend", "Python, FastAPI, SQLAlchemy, PostgreSQL, Supabase, Pydantic, WeasyPrint; Java, JavaEE / Struts, MySQL"),
         ("Frontend", "TypeScript, React, Vite, Tailwind, shadcn/ui, Three.js, PWA"),
         ("Cloud & operations", "Google Cloud Run and Cloud Run Jobs, Cloud Storage, Firebase, Docker, BigQuery, Slack alerting"),
-        ("Tax", "CFDI 4.0, SAT, PAC, SII (Chile), SUNAT (Peru), IMSS / IDSE"),
+        ("Tax & payments", "CFDI 4.0, SAT, PAC, SII (Chile), SUNAT (Peru), IMSS / IDSE, Mercado Pago"),
         ("AI", "Claude Code, Codex, OpenAI API, tool calling, Playwright"),
-        ("Legacy", "Java, JavaEE / Struts, MySQL, Tomcat"),
     ],
     languages="Spanish and English",
     interests_title="Interests",
@@ -253,13 +261,13 @@ EN = CV(
 CSS = """
 @page { size: Letter; margin: 0.42in 0.52in; }
 * { box-sizing: border-box; }
-body { font-family: Georgia, 'Times New Roman', serif; font-size: 9.5pt; line-height: 1.24; color: #000; margin: 0; }
-h1 { font-size: 17.5pt; font-weight: 700; text-align: center; margin: 0 0 2pt; letter-spacing: .02em; }
-.contact { text-align: center; font-size: 8.7pt; margin-bottom: 5pt; }
+body { font-family: Georgia, 'Times New Roman', serif; font-size: 9.3pt; line-height: 1.22; color: #000; margin: 0; }
+h1 { font-size: 17pt; font-weight: 700; text-align: center; margin: 0 0 2pt; letter-spacing: .02em; }
+.contact { text-align: center; font-size: 8.5pt; margin-bottom: 4pt; }
 .contact span + span::before { content: '  ·  '; }
-h2 { font-size: 9.4pt; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; border-bottom: 1px solid #000; margin: 6.5pt 0 3pt; padding-bottom: 1pt; }
+h2 { font-size: 9.4pt; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; border-bottom: 1px solid #000; margin: 5.5pt 0 2.5pt; padding-bottom: 1pt; }
 p { margin: 0 0 2pt; text-align: justify; }
-.job { margin-bottom: 3.5pt; }
+.job { margin-bottom: 3pt; }
 .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
 .row b { font-size: 9.8pt; }
 .row .when { white-space: nowrap; font-size: 9pt; }
@@ -283,9 +291,10 @@ def render_html(cv: CV) -> str:
         parts.append(f"<div class='row'><b>{e(j.org)}</b><span class='when'>{e(j.when)}</span></div>")
         parts.append(f"<div class='row role'><span>{e(j.role)}</span><span class='when'>{e(j.place)}</span></div>")
         parts.append("<ul>" + "".join(f"<li>{e(b)}</li>" for b in j.bullets) + "</ul></div>")
-    parts.append(f"<h2>{e(cv.projects_title)}</h2>")
-    for title, desc in cv.projects:
-        parts.append(f"<p><b>{e(title)}</b>. {e(desc)}</p>")
+    if cv.projects:
+        parts.append(f"<h2>{e(cv.projects_title)}</h2>")
+        for title, desc in cv.projects:
+            parts.append(f"<p><b>{e(title)}</b>. {e(desc)}</p>")
     parts.append(f"<h2>{e(cv.education_title)}</h2>")
     for inst, degree, when in cv.education:
         parts.append(f"<div class='job'><div class='row'><b>{e(inst)}</b><span class='when'>{e(when)}</span></div><p>{e(degree)}</p></div>")
@@ -377,11 +386,12 @@ def to_docx(cv: CV, path: str) -> None:
             bp.paragraph_format.space_after = Pt(1)
         doc.add_paragraph().paragraph_format.space_after = Pt(0)
 
-    heading(cv.projects_title)
-    for title, desc in cv.projects:
-        p = doc.add_paragraph()
-        p.add_run(title).bold = True
-        p.add_run(". " + desc)
+    if cv.projects:
+        heading(cv.projects_title)
+        for title, desc in cv.projects:
+            p = doc.add_paragraph()
+            p.add_run(title).bold = True
+            p.add_run(". " + desc)
 
     heading(cv.education_title)
     for inst, degree, when in cv.education:

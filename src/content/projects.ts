@@ -7,8 +7,8 @@ export const ownProjects: Project[] = [
     year: "2026",
     kind: { es: "Producto propio · en producción", en: "Own product · in production" },
     summary: {
-      es: "Plataforma mexicana de inscripciones a carreras 5K, 10K y 21K. El organizador publica su carrera y cobra en línea con Mercado Pago; el corredor se inscribe sin crear cuenta y recibe su dorsal con QR para recoger el kit. Pensada para teléfonos de gama baja y para que el organizador nunca vuelva al Excel.",
-      en: "A Mexican self-service registration platform for 5K, 10K and 21K races. Organizers publish their race and collect payments through Mercado Pago; runners sign up without an account and receive a QR bib to pick up their kit. Built for low-end phones and so the organizer never goes back to Excel.",
+      es: "Plataforma mexicana de inscripciones a carreras 5K, 10K y 21K. El organizador publica su carrera y cobra en línea con Mercado Pago; el corredor se inscribe sin crear cuenta y recibe su dorsal con QR para recoger el kit. Pensada para teléfonos de gama baja y para que el organizador nunca vuelva al Excel. Carrera piloto: II Festival Running, Tepic, 15 de noviembre de 2026.",
+      en: "A Mexican self-service registration platform for 5K, 10K and 21K races. Organizers publish their race and collect payments through Mercado Pago; runners sign up without an account and receive a QR bib to pick up their kit. Built for low-end phones and so the organizer never goes back to Excel. Pilot race: II Festival Running, Tepic, November 15, 2026.",
     },
     url: "https://eventleta.com",
     image: "/img/eventleta.webp",
@@ -124,6 +124,16 @@ export const steps: Step[] = [
     note: {
       es: "Dirijo el desarrollo de SATIUM: la API, las aplicaciones, la migración de los clientes desde SIAREX y la operación en producción, con agentes de IA como parte del equipo.",
       en: "I lead SATIUM's development: the API, the applications, the migration of clients from SIAREX and the production operation, with AI agents as part of the team.",
+    },
+    current: true,
+  },
+  {
+    from: "2026",
+    title: { es: "Fundador y desarrollador de Eventleta", en: "Founder and developer of Eventleta" },
+    org: "eventleta.com · producto propio",
+    note: {
+      es: "Plataforma de inscripciones a carreras con pagos en línea y dorsal con QR. En producción con la carrera piloto II Festival Running (Tepic, noviembre de 2026).",
+      en: "Race registration platform with online payments and a QR bib. In production with the pilot race II Festival Running (Tepic, November 2026).",
     },
     current: true,
   },
