@@ -26,9 +26,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease }}
           >
-            Axel
-            <br />
-            Bernal
+            Axel <span className="block">Bernal</span>
           </motion.h1>
           <motion.p
             className="lead mt-7"
