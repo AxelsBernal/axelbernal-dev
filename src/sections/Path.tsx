@@ -15,12 +15,12 @@ export function Path() {
       <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:gap-14">
         <ol className="relative border-l border-white/12 pl-7">
           {steps.map((s, i) => (
-            <Reveal key={i} delay={i * 0.05}>
-              <li className="relative pb-10 last:pb-0">
-                <span
-                  className={`absolute -left-[33px] top-1.5 h-3 w-3 rounded-full ring-4 ring-ink ${s.current ? "bg-teal" : "bg-fog-3"}`}
-                  aria-hidden
-                />
+            <li key={i} className="relative pb-11 last:pb-0">
+              <span
+                className={`absolute -left-[35px] top-1.5 h-3 w-3 rounded-full ring-4 ring-ink ${s.current ? "bg-teal" : "bg-fog-3"}`}
+                aria-hidden
+              />
+              <Reveal delay={i * 0.05}>
                 <p className="num text-[12.5px] text-fog-3">
                   {s.from}
                   {s.to ? ` — ${s.to}` : s.current ? ` — ${t("path.now")}` : ""}
@@ -28,8 +28,8 @@ export function Path() {
                 <h3 className="mt-1 text-[1.25rem]">{pick(s.title, lang)}</h3>
                 <p className="text-[14px] text-cobalt-2">{s.org}</p>
                 <p className="mt-2 max-w-[58ch] text-[15px] leading-relaxed text-fog-2">{pick(s.note, lang)}</p>
-              </li>
-            </Reveal>
+              </Reveal>
+            </li>
           ))}
         </ol>
 

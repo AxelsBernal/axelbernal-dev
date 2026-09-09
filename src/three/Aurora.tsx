@@ -42,7 +42,7 @@ const fragment = /* glsl */ `
   }
 
   void main() {
-    vec2 p = vPos.xy * 0.42;
+    vec2 p = vPos.xy * 0.3;
     float t = uTime * 0.045;
     float n1 = fbm(p + vec2(t, -t * 0.7));
     float n2 = fbm(p * 1.6 - vec2(t * 0.6, t * 0.9) + 3.1);
@@ -89,8 +89,8 @@ export function Aurora() {
   });
 
   return (
-    <mesh ref={ref} position={[0, 0, -7]} material={material} frustumCulled={false}>
-      <planeGeometry args={[60, 40]} />
+    <mesh ref={ref} position={[0, 0, -10]} material={material} frustumCulled={false}>
+      <planeGeometry args={[80, 56]} />
     </mesh>
   );
 }

@@ -37,13 +37,13 @@ function buildShapes(count: number): Shape[] {
   const kinds: Kind[] = ["capsule", "torus", "box", "ico", "glass", "capsule", "torus", "glass"];
   const out: Shape[] = [];
   for (let i = 0; i < count; i++) {
-    const x = (r() - 0.5) * 11;
-    const y = (r() - 0.5) * 9 - 1.5;
-    const z = -3.8 - r() * 2.2;
+    const x = (r() - 0.5) * 14;
+    const y = (r() - 0.5) * 10 - 1.5;
+    const z = -5.2 - r() * 3.2;
     out.push({
       kind: kinds[i % kinds.length],
       home: new THREE.Vector3(x, y, z),
-      scale: 0.28 + r() * 0.42,
+      scale: 0.24 + r() * 0.34,
       color: PALETTE[i % PALETTE.length],
       spin: (r() - 0.5) * 0.8,
       seed: r() * 100,

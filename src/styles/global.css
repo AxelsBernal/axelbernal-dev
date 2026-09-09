@@ -24,6 +24,9 @@
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Estilos de elemento en @layer base: así los márgenes de utilidad (mt-10)
+   siguen ganando, porque el CSS sin capa le gana a cualquier capa. */
+@layer base {
 html {
   color-scheme: dark;
   background: var(--color-ink);
@@ -59,13 +62,17 @@ p { margin: 0; text-wrap: pretty; }
   outline-offset: 3px;
   border-radius: 6px;
 }
+} /* @layer base */
 
 /* ── Liquid Glass ───────────────────────────────────────────────────────
    Tres capas: el cuerpo (blur + saturación del fondo), un borde de luz en
    degradado (::before) y un brillo especular que sigue al cursor (::after).
    La refracción "líquida" es un filtro SVG de desplazamiento aplicado al
    backdrop; sólo Chromium lo entiende, el resto se queda con el esmerilado
-   porque la declaración inválida se descarta y sobrevive la anterior. */
+   porque la declaración inválida se descarta y sobrevive la anterior.
+   Todo va en @layer components para que las utilidades de Tailwind
+   (md:hidden, !px-3…) le ganen: el CSS sin capa siempre vence al de capa. */
+@layer components {
 .glass {
   position: relative;
   isolation: isolate;
@@ -188,6 +195,7 @@ p { margin: 0; text-wrap: pretty; }
   transition: text-decoration-color 0.2s;
 }
 .link:hover { text-decoration-color: var(--color-cobalt-2); }
+} /* @layer components */
 
 /* Marco con foto: recorte redondeado con vidrio alrededor */
 .photo-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }

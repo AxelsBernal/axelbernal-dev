@@ -136,8 +136,8 @@ export const steps: Step[] = [
   {
     from: "Mar 2025",
     to: "Ene 2026",
-    title: { es: "Practicante de desarrollo Java", en: "Java development intern" },
-    org: "SIAREX Technologies",
+    title: { es: "Desarrollador full-stack (prácticas)", en: "Full-stack developer (internship)" },
+    org: "SIAREX Technology",
     note: {
       es: "Backend empresarial en JavaEE con MySQL sobre el sistema que hoy sustituimos. Ahí aprendí las reglas del negocio que luego migré.",
       en: "Enterprise backend in JavaEE with MySQL on the system we are now replacing. That is where I learned the business rules I later migrated.",
