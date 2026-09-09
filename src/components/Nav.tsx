@@ -46,13 +46,13 @@ export function Nav() {
       >
         <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="flex items-center gap-3 rounded-full px-1" aria-label="Axel Bernal, inicio">
           <img src="/img/logo-ab.png" alt="" className="h-7 w-auto" />
-          <span className="hidden font-display text-[15px] font-semibold tracking-tight sm:inline">Axel Bernal</span>
+          <span className="hidden whitespace-nowrap font-display text-[15px] font-semibold tracking-tight lg:inline">Axel Bernal</span>
         </button>
 
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-0.5 md:flex lg:gap-1">
           {ITEMS.map(([id, key]) => (
             <li key={id}>
-              <button onClick={() => go(id)} className="rounded-full px-3.5 py-1.5 text-[14px] font-medium text-fog-2 transition hover:bg-white/10 hover:text-fog">
+              <button onClick={() => go(id)} className="whitespace-nowrap rounded-full px-2.5 py-1.5 text-[13.5px] font-medium text-fog-2 transition hover:bg-white/10 hover:text-fog lg:px-3.5 lg:text-[14px]">
                 {t(key)}
               </button>
             </li>

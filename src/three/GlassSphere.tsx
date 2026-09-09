@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import { MeshTransmissionMaterial, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import { clamp, easeInOutCubic, smoothstep, view } from "@/state/view";
@@ -12,6 +12,9 @@ import type { Phase } from "@/hooks/useSite";
 export function GlassSphere({ low, phase }: { low: boolean; phase: Phase }) {
   const group = useRef<THREE.Group>(null);
   const logo = useTexture("/img/logo-ab.png");
+  /* En vertical (teléfono) la esfera se encoge para caber con su halo. */
+  const aspect = useThree((s) => s.viewport.aspect);
+  const base = aspect < 0.8 ? 0.58 : aspect < 1.2 ? 0.78 : 1;
 
   useEffect(() => {
     logo.colorSpace = THREE.SRGBColorSpace;
@@ -27,11 +30,12 @@ export function GlassSphere({ low, phase }: { low: boolean; phase: Phase }) {
     g.rotation.y = THREE.MathUtils.damp(g.rotation.y, view.mx * 0.55 + t * 0.05, 3, dt);
     g.rotation.x = THREE.MathUtils.damp(g.rotation.x, -view.my * 0.4, 3, dt);
 
+    let s = base;
     if (phase === "entering") {
       const e = easeInOutCubic(clamp((performance.now() - view.enterAt) / 1500));
-      const s = 1 - smoothstep(0.4, 0.68, e);
-      g.scale.setScalar(Math.max(0.0001, s));
+      s = base * (1 - smoothstep(0.4, 0.68, e));
     }
+    g.scale.setScalar(Math.max(0.0001, s));
   });
 
   return (
@@ -66,10 +70,12 @@ export function GlassSphere({ low, phase }: { low: boolean; phase: Phase }) {
           />
         )}
       </mesh>
-      {/* El logo flota en el centro; la refracción lo agranda. */}
+      {/* El logo flota en el centro; la refracción lo agranda. Va con
+          alphaTest y sin `transparent` para que entre en el pase opaco: los
+          materiales con transmisión sólo ven lo opaco a través del vidrio. */}
       <mesh position={[0, 0, 0]}>
         <planeGeometry args={[1.3, 1.15]} />
-        <meshBasicMaterial map={logo} transparent toneMapped={false} depthWrite={false} />
+        <meshBasicMaterial map={logo} alphaTest={0.5} toneMapped={false} side={THREE.DoubleSide} />
       </mesh>
       {/* Anillo fino de vidrio, como un halo */}
       <mesh rotation={[Math.PI / 2.6, 0.3, 0]}>
