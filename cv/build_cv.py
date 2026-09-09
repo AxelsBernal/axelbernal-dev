@@ -74,7 +74,7 @@ ES = CV(
         "un ERP SaaS de cumplimiento fiscal para México, Chile y Perú con catorce aplicaciones en producción "
         "(FastAPI, React, PostgreSQL, Google Cloud). He migrado sistemas heredados cuadrando los datos al centavo "
         "y opero la plataforma con agentes de IA como parte del equipo. Busco un puesto full-stack senior o de "
-        "liderazgo técnico, remoto, en México o Estados Unidos."
+        "liderazgo técnico, remoto o presencial, en México o Estados Unidos; disponible para reubicarme."
     ),
     experience_title="Experiencia",
     jobs=[
@@ -169,7 +169,7 @@ EN = CV(
         "Computer systems engineer and full-stack technical lead. I lead the development of SATIUM, a tax-compliance "
         "SaaS ERP for Mexico, Chile and Peru with fourteen applications in production (FastAPI, React, PostgreSQL, "
         "Google Cloud). I have migrated legacy systems reconciling the data to the cent, and I run the platform with "
-        "AI agents as part of the team. Looking for a senior full-stack or technical-lead role, remote, in Mexico or the United States."
+        "AI agents as part of the team. Looking for a senior full-stack or technical-lead role, remote or on-site, in Mexico or the United States; open to relocation."
     ),
     experience_title="Experience",
     jobs=[
